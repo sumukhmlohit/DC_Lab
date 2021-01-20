@@ -13,6 +13,14 @@ Get necessary packages (one time step):
 sudo apt-get update
 audo apt-get upgrade
 sudo apt-get install libopenmpi-dev libgd-dev
+(or)
+wget https://github.com/libgd/libgd/releases/download/gd-2.2.5/libgd-2.2.5.tar.gz
+tar zxvf libgd-2.2.5.tar.gz
+cd libgd-2.2.5
+./configure 
+make
+sudo make install
+make installcheck
 ```
 
 To compile and run codes:
@@ -30,14 +38,8 @@ Get necessary packages and setup (one time step):
 sudo apt-get install mpich mpich-doc
 sudo update-alternatives --config mpi #you may need to select a certain MPI installation
 ```
-(or)
-wget https://github.com/libgd/libgd/releases/download/gd-2.2.5/libgd-2.2.5.tar.gz
-tar zxvf libgd-2.2.5.tar.gz
-cd libgd-2.2.5
-./configure 
-make
-sudo make install
-make installcheck
+
+
 
 To compile and run codes:
 
